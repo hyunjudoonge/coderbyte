@@ -1,13 +1,13 @@
 def Palindrome(str)
 
   # code goes here
-  flag=true
+
   
-  if str != str.reverse
-    flag=false
-  end
+  str.gsub!(' ', '')
+  str.downcase!
   
-  return flag
+
+  return str == str.reverse
          
 end
    
